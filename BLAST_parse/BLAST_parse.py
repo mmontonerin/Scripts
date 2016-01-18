@@ -46,7 +46,7 @@ args=parser.parse_args()
 
 table=pd.read_table(args.input, sep='\t', header=None)
 
-parsed_table=table[(table[3] > args.alignment_length) & (table[2] > args.identity) & (table[10] < args.e_value) & (table[11] > args.bitscore)]
+parsed_table=table[(table[3] >= args.alignment_length) & (table[2] >= args.identity) & (table[10] <= args.e_value) & (table[11] >= args.bitscore)]
 
 parsed_table.to_csv(args.output, header=None, index=False, sep='\t')
 
