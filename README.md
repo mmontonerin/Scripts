@@ -21,3 +21,7 @@
 [renamer_braker_output_fasta_headers.sh](https://github.com/mmontonerin/Scripts/blob/master/fasta_handling_scripts/renamer_braker_output_fasta_headers.sh) simple sed rename post-braker output to add species short code for easier alignment analyses
 
 [rename_pre_phy.pl](https://github.com/mmontonerin/Scripts/blob/master/fasta_handling_scripts/rename_pre_phy.pl) specific to a gene analysis, but modifiable to rename fasta headers pre-FASTA->PHYLIP transformation to a very short header
+
+
+### General file formatter scripts
+[file_formatter_rename_space_containing_files.sh](https://github.com/mmontonerin/Scripts/blob/master/renaming_files/file_formatter_rename_space_containing_files.sh) bash renamer for multiple files in a folder, where some of them contain spaces in the filename. It changes the spaces for underscores, but it can easily be modified on the script in line 16. 
